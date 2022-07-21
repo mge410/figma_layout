@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -73,5 +74,150 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+body {
+  font-family: "Lato";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #FFFFFF;
+}
 
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
 
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header__wrapper {
+  padding-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 490px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.header__link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+  opacity: .75;
+}
+
+.intro {
+  height: 100vh;
+  background: url(../img/bac.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+}
+
+.intro__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  max-width: 620px;
+  margin-bottom: 22px;
+}
+
+.intro__subtitle {
+  max-width: 550px;
+  margin-bottom: 59px;
+}
+
+.search-form__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.search-form__field {
+  background: transparent url(../img/svg/Oval.svg) no-repeat left 8px;
+  background-size: 20px;
+  border-bottom: 2px solid #BFC0C5;
+  margin-right: 60px;
+  width: 297px;
+  padding-left: 43px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding-bottom: 22px;
+}
+
+.search-form__field::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.search-form__field:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.search-form__field::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.search-form__field::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.search-form__submit {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  background: #1B7DFF;
+  color: white;
+  border: 0;
+}
+
+.search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active {
+  background: #3162a1;
+}

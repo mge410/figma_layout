@@ -1,1 +1,135 @@
 @import "_nullstyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+body{
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;   
+}
+
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    &__wrapper {
+        padding-top: 56px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__logo {
+    }
+
+    &__logo-pic {
+    }
+
+    &__nav {
+        align-self: center;
+        width: 490px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex: 1 1 100%;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 24px;
+        color: white;
+    }
+
+    &__link:hover, &__link:focus, &__link:active{
+        opacity: .75;
+    }
+}
+
+.intro{
+    height: 100vh;
+    background: url(../img/bac.jpg)no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+}
+
+
+.intro {
+
+		&__title {
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 60px;
+            max-width: 620px;
+            margin-bottom: 22px;
+		}
+
+		&__subtitle {
+            max-width: 550px;
+            margin-bottom: 59px;
+		}
+}
+
+
+.search-form {
+
+		&__wrap {
+		}
+
+		&__info {
+            display: flex;
+            flex-wrap: wrap;
+		}
+
+		&__field {
+            background: transparent url(../img/svg/Oval.svg) no-repeat left 8px;
+            background-size: 20px;
+            border-bottom: 2px solid #BFC0C5;
+            margin-right: 60px;
+            width: 297px;
+            padding-left: 43px;
+            font-weight: 500;
+            font-size: 18px;
+            color: #FFFFFF;
+            padding-bottom: 22px;
+		}
+
+        &__field::placeholder {
+            font-weight: 500;
+            font-size: 18px;
+            color: #FFFFFF;
+		}
+
+		&__submit {
+            text-transform: uppercase;
+            padding: 15px 40px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            background: #1B7DFF;
+            color: white;
+            border: 0;
+		}
+        &__submit:hover, &__submit:focus, &__submit:active{
+            background: #3162a1;
+		}
+}
