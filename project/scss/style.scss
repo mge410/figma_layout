@@ -12,6 +12,12 @@ body{
     color: #FFFFFF;
 }
 
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper{
     max-width: 1060px;
     margin: 0 auto;   
@@ -132,4 +138,75 @@ body{
         &__submit:hover, &__submit:focus, &__submit:active{
             background: #3162a1;
 		}
+}
+
+
+.benefits {
+
+    &__wrap {
+        max-width: 1262px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+        margin: 0 auto;
+
+        position: relative;
+    }
+
+    &__title {
+        width: 100%;
+        background: white;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 42px;
+        color: #102746;
+        padding-left: 100px;
+        padding-top: 93px;
+        padding-bottom: 120px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-100%);
+    }
+
+    &__conteiner {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+    }
+}
+
+.card {
+    color: #000000;
+    padding-bottom: 112px;
+    &__item {
+        max-width: 310px;
+
+    }
+
+    &__img {
+        width: 66px;
+        height: auto;
+        padding-bottom: 37px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        padding-bottom: 26px;
+
+
+    }
+
+    &__text {
+        padding-bottom: 39px;
+
+    }
+
+    &__link {
+        display: inline-block;
+        padding-right: 56px;
+        color: #006DFE;
+        background: url(../img/svg/arrow.svg) right 8px no-repeat;
+    }
 }
