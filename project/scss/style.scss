@@ -40,6 +40,20 @@ img{
     }
 }
 
+.btn{
+    text-transform: uppercase;
+    padding: 15px 40px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    background: #1B7DFF;
+    color: white;
+    border: 0;
+    &:hover, &__submit:focus, &__submit:active{
+            background: #3162a1;
+		}
+}
+
 
 .header {
     position: fixed;
@@ -140,20 +154,6 @@ img{
             font-weight: 500;
             font-size: 18px;
             color: #FFFFFF;
-		}
-
-		&__submit {
-            text-transform: uppercase;
-            padding: 15px 40px;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 29px;
-            background: #1B7DFF;
-            color: white;
-            border: 0;
-		}
-        &__submit:hover, &__submit:focus, &__submit:active{
-            background: #3162a1;
 		}
 }
 
@@ -293,6 +293,7 @@ img{
     }
 
     &__card-pic {
+        height: 355px;
         width: 100%;
         object-fit: cover;
         transition: 0.20s;
@@ -314,5 +315,124 @@ img{
         width: 100%;
         height: 100%;
         z-index: 4;
+    }
+}
+
+.tours {
+
+    &__conteiner {
+    }
+
+    &__tour {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 100px;
+        align-items: center;
+        margin-bottom: 77px;
+    }
+    margin-bottom: 140px;
+}
+
+.tour {
+
+    &_thumb {
+    }
+
+    &__info {
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+        color: #102746;
+        margin-bottom: 85px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #102746;
+        margin-bottom: 55px;
+    }
+}
+
+
+.visit {
+
+    &__title {
+        margin-bottom: 54px;
+    }
+
+    &__conteiner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 55px;
+    }
+
+    &__card {
+    }
+}
+
+.visitcard {
+    display: flex;
+    flex-direction: column;
+
+    &__pic {
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    &__img {
+    }
+
+    &__stats {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(21, 24, 36, 0.6);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: end;
+        padding: 16px 25px;
+        font-weight: 500;
+    }
+
+    &__title {
+        margin: 0 auto 0 0;
+    }
+
+    &__likes {
+    }
+
+    &__likes-value {
+        padding-right: 20px;
+        background: url(../img/svg/live.svg) no-repeat right 3px;
+        margin-right: 15px;
+    }
+
+    &__com {
+        padding-right: 20px;
+        background: url(../img/svg/com.svg) no-repeat right 7px;
+    }
+
+    &__com-value {
+    }
+
+    &__text {
+        color: #102746;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 12px 19px;
+        width: 120px;
+        margin: auto 0 0 0;
     }
 }

@@ -112,6 +112,21 @@ img {
   background: url(../img/svg/arrow.svg) right 8px no-repeat;
 }
 
+.btn {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  background: #1B7DFF;
+  color: white;
+  border: 0;
+}
+
+.btn:hover, .btn__submit:focus, .btn__submit:active {
+  background: #3162a1;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -233,21 +248,6 @@ img {
   font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
-}
-
-.search-form__submit {
-  text-transform: uppercase;
-  padding: 15px 40px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  background: #1B7DFF;
-  color: white;
-  border: 0;
-}
-
-.search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active {
-  background: #3162a1;
 }
 
 .benefits {
@@ -397,6 +397,7 @@ img {
 }
 
 .places__card-pic {
+  height: 355px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -420,4 +421,113 @@ img {
   width: 100%;
   height: 100%;
   z-index: 4;
+}
+
+.tours {
+  margin-bottom: 140px;
+}
+
+.tours__tour {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 77px;
+}
+
+.tour__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #102746;
+  margin-bottom: 85px;
+}
+
+.tour__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+  margin-bottom: 55px;
+}
+
+.visit__title {
+  margin-bottom: 54px;
+}
+
+.visit__conteiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 55px;
+}
+
+.visitcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.visitcard__pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.visitcard__stats {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(21, 24, 36, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 16px 25px;
+  font-weight: 500;
+}
+
+.visitcard__title {
+  margin: 0 auto 0 0;
+}
+
+.visitcard__likes-value {
+  padding-right: 20px;
+  background: url(../img/svg/live.svg) no-repeat right 3px;
+  margin-right: 15px;
+}
+
+.visitcard__com {
+  padding-right: 20px;
+  background: url(../img/svg/com.svg) no-repeat right 7px;
+}
+
+.visitcard__text {
+  color: #102746;
+  margin-bottom: 30px;
+}
+
+.visitcard__btn {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 12px 19px;
+  width: 120px;
+  margin: auto 0 0 0;
 }
